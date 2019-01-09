@@ -27,7 +27,7 @@ class DbHealthCheck extends HealthCheck {
     }
 
     private boolean checkDbConnection() {
-        try (Connection connection = DriverManager.getConnection("jdbc:mysql://mysql-container:3306/test?useSSL=false", "root", "root")) {
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://mysql-container:3306/prometheus?useSSL=false", "root", "root")) {
             logger.info("Database connected!");
             return true;
         } catch (SQLException e) {
