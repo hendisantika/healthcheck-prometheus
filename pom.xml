@@ -79,7 +79,8 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.hellokoding.monitoring.Application</mainClass>
+                            <mainClass>com.hendisantika.healthcheckprometheus.HealthcheckPrometheusApplication
+                            </mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
